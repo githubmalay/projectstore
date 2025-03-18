@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Projects for Sale</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+      /* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #27ae60;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #1e8449;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #27ae60;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1e8449;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 80px 0;
+    background-color: #f3fff9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #27ae60;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 14px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-shadow: inset 2px 2px 8px #f1f1f1, inset -2px -2px 8px #ffffff;
+}
+
+.form-control:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #27ae60;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e8449;
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.3);
+}
+
+.btn-success {
+    background-color: #3498db;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #2980b9;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Marketing Content */
+.marketing-content {
+    padding-left: 40px;
+}
+
+.marketing-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #27ae60;
+}
+
+.marketing-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.marketing-list li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.marketing-list i {
+    color: #27ae60;
+    margin-right: 10px;
+}
+
+/* Project Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #27ae60;
+}
+
+.card-body .price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #27ae60;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 2px solid #e6e6e6;
+}
+
+footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+    
+    .marketing-content {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card img {
+        height: 180px;
+    }
+
+    .card-body h5 {
+        font-size: 1.2rem;
+    }
+
+    .card-body .price {
+        font-size: 1rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">ProjectStore</a>
+    </nav>
+    
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Side: Form -->
+            <div class="col-md-6 order-2 order-md-1">
+                <div class="form-container" id="contact">
+                    <h1 class="h1 text-center text-primary">Contact Me</h1><hr>
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="2" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="submit">Get Project</button>
+                    </form>
+                </div>
+            </div>
+                
+    
+                <!-- Right Side: Marketing Details -->
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="marketing-content">
+                        <h1 class="marketing-title">Professional PHP Projects for Sale</h1>
+                        <p class="marketing-description">
+                            Get complete source code and start your project instantly!                    </p>
+                        <ul class="marketing-list">
+                            <li><i class="fas fa-check-circle"></i> Complete Source Code Included</li>
+                            <li><i class="fas fa-check-circle"></i> Professional Design & UX</li>
+                            <li><i class="fas fa-check-circle"></i> Fast Delivery via Email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="containerfluied mx-5">
+        <h2 class="text-center mb-4" style="color: #27ae60;">PHP Projects</h2>
+        <div class="row" id="projectList">
+            <!-- Dynamic Projects will load here -->
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    &copy; 2025 ProjectStore. All rights reserved. | Designed with ❤️ by ProjectStore.
+</footer>
+
+<!-- JS Scripts -->
+ <script src="contact.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const projects = [
+        {
+            title: 'E-Commerce Website',
+            price: '₹4999',
+            image: 'e-com.png',
+            pdf: 'e-commerce system.pdf'
+        },
+        {
+            title: 'Bus Booking System',
+            price: '₹4999',
+            image: 'bus.png',
+            pdf: 'bus booking.pdf'
+        },
+        {
+            title: 'Rental Bus Booking System',
+            price: '₹4999',
+            image: 'r-bus.png',
+            pdf: 'rental bus booking.pdf'
+        }, {
+            title: 'Flight Booking System',
+            price: '₹4999',
+            image: 'flight.png',
+            pdf: 'flight booking.pdf'
+        }, {
+            title: 'Delivery  System',
+            price: '₹4999',
+            image: 'dms.png',
+            pdf: 'Delivery management System.pdf'
+        }, {
+            title: 'Hotel Booking Website',
+            price: '₹4999',
+            image: 'hotel.png',
+            pdf: 'Hotel booking System.pdf'
+        }, {
+            title: 'Cab Booking System',
+            price: '₹4999',
+            image: 'cab.png',
+            pdf: 'cab booking.pdf'
+        },
+        {
+            title: 'Rental Ecommerce',
+            price: '₹4999',
+            image: 'r-e-com.png',
+            pdf: 'Rental bus booking.pdf'
+        }
+    ];
+
+    // Load Projects into Cards
+    const projectList = document.getElementById('projectList');
+    projectList.innerHTML = '';
+    projects.forEach((project, index) => {
+        projectList.innerHTML += `
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="${project.image}" class="card-img-top" alt="${project.title}">
+                    <div class="card-body">
+                        <h5>${project.title}</h5>
+                        <span class="price">${project.price}</span>
+                        <button class="btn btn-primary" onclick="downloadPDF('${project.pdf}')">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>`;
+    });
+
+    // Download PDF
+    function downloadPDF(fileName) {
+        const link = document.createElement('a');
+        link.href = fileName;
+        link.download = fileName;
+        link.click();
+    }
+
+   
+</script>
+
+</body>
+</html>

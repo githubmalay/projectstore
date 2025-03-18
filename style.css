@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://source.unsplash.com/1600x900/?technology');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Modal */
+.modal-body h3 {
+    font-size: 2rem;
+}
+
+.carousel-inner img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
