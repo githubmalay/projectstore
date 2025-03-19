@@ -4,16 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PHP Projects for Sale</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -342,18 +335,18 @@ color: whitesmoke;
 
     footer {
         font-size: 0.85rem;
-        padding: 15px;
+        padding: 0px;
     }
 }
 /* Mobile Footer Navigation */
 .mobile-footer {
     display: none;
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     background-color: #0e1a2b;
-    padding: 10px 0;
+    padding: 9px 0;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
     z-index: 999;
     border-top: 2px solid #1c2e4a;
@@ -361,18 +354,20 @@ color: whitesmoke;
 
 .footer-link {
     color: #f0f0f0;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
-    padding: 8px;
+    padding: 0px;
     text-decoration: none;
     display: inline-block;
     width: 33%;
     transition: color 0.3s ease;
 }
 
+
+
 .footer-link i {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 4px;
 }
 
@@ -386,8 +381,15 @@ color: whitesmoke;
         display: flex;
         justify-content: space-around;
     }
+    .footer {
+            display: none;
+        }
 }
-
+@media (max-width: 768px) {
+        .footer {
+            display: none;
+        }
+    }
     </style>
 </head>
 <body>
@@ -399,7 +401,7 @@ color: whitesmoke;
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -413,12 +415,12 @@ color: whitesmoke;
 
 
 
-<section class="hero-section">
+<section class="hero-section" id="contact">
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side: Form -->
         <div class="col-md-6">
-            <div class="form-container" id="contact">
+            <div class="form-container" >
                 <h1 class="form-title mb-2">Get in Touch</h1>
                 <h1 class="form-title mb-4" style="font-size: 0.9rem; margin: 0; font-weight: 400;">For Your Project</h1>
                 <form class="contact-form" id="contactForm">
@@ -449,7 +451,7 @@ color: whitesmoke;
                     <ul class="marketing-list">
                         <li><i class="fas fa-check-circle"></i> Complete Source Code Included</li>
                         <li><i class="fas fa-check-circle"></i> Fast Delivery via Email</li>
-                        <li><i class="fas fa-check-circle"></i> Need help? Contact us anytime on <a href="https://www.instagram.com/meet.ladola" target="_blank" style="color: #27ae60; text-decoration: none; font-weight: 500;">Instagram</a>.</li>
+                        <li><i class="fas fa-check-circle"></i> Need help? Contact us anytime on <a href="https://www.instagram.com/meet.ladola" target="_blank" style="color: #4fa3f7; text-decoration: none; font-weight: 500;">Instagram</a>.</li>
     <li><i class="fas fa-check-circle"></i> Free installation support — we’ll help you set it up!</li>
     <li><i class="fas fa-check-circle"></i> Let us know the name of the website you want, and we’ll create it for you.</li>
 
@@ -510,28 +512,28 @@ const projects = [
     },
     {
         title: 'Bus Booking System',
-        price: '₹3499',
+        price: '₹3999',
         image: 'bus.png',
         pdf: 'bus booking.pdf'
     },
     {
         title: 'Bus Rental System',
-        price: '₹3499',
+        price: '₹2999',
         image: 'r-bus.png',
         pdf: 'rental bus booking.pdf'
     }, {
         title: 'Hotel Booking System',
-        price: '₹3499',
+        price: '₹3999',
         image: 'hotel.png',
         pdf: 'Hotel booking System.pdf'
     }, {
         title: 'Cab Booking System',
-        price: '₹3499',
+        price: '₹4999',
         image: 'cab.png',
         pdf: 'cab booking.pdf'
     }, {
         title: 'Delivery  System',
-        price: '₹3499',
+        price: '₹2999',
         image: 'dms.png',
         pdf: 'Delivery management System.pdf'
     }, {
