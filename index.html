@@ -519,45 +519,37 @@
         const projects = [
             {
                 title: 'E-Commerce Website',
-                price: '₹3499',
                 image: 'ecom.png',
                 pdf: 'e-commerce system.pdf'
             },
             {
                 title: 'Rental Ecommerce',
-                price: '₹3499',
                 image: 'r-e-com.png',
                 pdf: 'Rental bus booking.pdf'
             },
             {
                 title: 'Bus Booking System',
-                price: '₹3999',
                 image: 'bus.png',
                 pdf: 'bus booking.pdf'
             },
             {
                 title: 'Bus Rental System',
-                price: '₹2999',
                 image: 'r-bus.png',
                 pdf: 'rental bus booking.pdf'
             }, {
                 title: 'Hotel Booking System',
-                price: '₹3999',
                 image: 'hb.png',
                 pdf: 'Hotel booking.pdf'
             }, {
                 title: 'Cab Booking System',
-                price: '₹4999',
                 image: 'cab.png',
                 pdf: 'cab booking.pdf'
             }, {
                 title: 'Delivery  System',
-                price: '₹2999',
                 image: 'dms.png',
                 pdf: 'Delivery management System.pdf'
             }, {
                 title: 'Flight Booking System',
-                price: '₹3499',
                 image: 'flight.png',
                 pdf: 'flight booking.pdf'
             }
@@ -573,8 +565,7 @@
                 <img src="${project.image}" class="card-img-top" alt="${project.title}">
                 <div class="card-body">
                     <h5>${project.title}</h5>
-                    <span class="price">${project.price}</span>
-                    <button class="btn btn-primary" onclick="downloadPDF('${project.pdf}')">
+                    <button class="btn btn-primary mt-3" onclick="downloadPDF('${project.pdf}')">
                         <i class="fas fa-download"></i> Download PDF
                     </button>
                     
